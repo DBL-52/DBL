@@ -1,3 +1,4 @@
+<!DOCTYPE>
 <html>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,6 +23,7 @@
     margin: 50px;
     padding: 50px;
     font-size: 50px;
+    min-height: 800px;
   }
   .innerbox{
     border: 3px solid pink;
@@ -36,30 +38,34 @@
     font-family: 'Abel', sans-serif;
   }
   .background{
-     background: url(download.jfif);
+     background: url(images/Data-Visualization_Blog-scaled.jpeg);
    }
-  </style>
+     </style>
   </head>  
 
-<h1 class="title"> DBL Visualization </h1>
+<h1 class="title"> ARANAE </h1>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <body class="background">
-<button type="submit">Upload Input</button>
-<div class="outerbox">
-  <div class="innerbox">
-    <button type="submit">X</button>
-    <button type="submit">Y</button>
-    <button type="submit">Z</button>
-    Visualization One.
-  </div>
-  <div class="innerbox">
-    <button type="submit">X</button>
-    <button type="submit">Y</button>
-    <button type="submit">X</button>
-    Visualization Two.
-  </div>
+  <div class="outerbox">
+    <div class="file-upload">
+      <input class="file-upload-input" type="file" name="myFile[]" id='myFile' multiple>
+      <button class="file-upload-input" type="button">Choose File(s)</button>
+      <span class class="file-upload-input">No file(s) selected</span>
+    </div>
+    <div class="innerbox">
+      <button type="submit">X</button>
+      <button type="submit">Y</button>
+      <button type="submit">Z</button>
+      Visualization One.
+    </div>
+    <div class="innerbox">
+      <button type="submit">X</button>
+      <button type="submit">Y</button>
+      <button type="submit">X</button>
+      Visualization Two.
+    </div>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </div>
-</html>
 </body>
+</html>
