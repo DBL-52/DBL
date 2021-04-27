@@ -40,6 +40,31 @@
   .background{
      background: url(images/Data-Visualization_Blog-scaled.jpeg);
    }
+   .file-upload{
+     display: inline-flex;
+     align-items: center;
+     font-size: 15px;
+   }
+   .file-upload-input{
+     display: none;
+   }
+   .file-upload-button{
+     -webkit-appearance: none;
+     background: #009879;
+     border: 2px solid #00745D;
+     border-radius: 4px;
+     outline: none;
+     padding: 0.5em 0.8em;
+     margin-right: 15px;
+     color: #ffffff;
+     font-size: 1em;
+     font-family: sans-serif;
+     font-weight: bold;
+     cursor: pointer;
+   }
+   .file-upload-button:active{
+     background:#00745D;
+   }
      </style>
   </head>  
 
@@ -50,8 +75,8 @@
   <div class="outerbox">
     <div class="file-upload">
       <input class="file-upload-input" type="file" name="myFile[]" id='myFile' multiple>
-      <button class="file-upload-input" type="button">Choose File(s)</button>
-      <span class class="file-upload-input">No file(s) selected</span>
+      <button class="file-upload-button" type="button">Choose File(s)</button>
+      <span class class="file-upload-label">No file(s) selected</span>
     </div>
     <div class="innerbox">
       <button type="submit">X</button>
