@@ -99,6 +99,14 @@
         button.addEventListener('click', function() {
           hiddenInput.click();
         });
+
+        hiddenInput.addEventListener('change', function() {
+          const filenameList = Array.prototype.map.call(hiddenInput.files, function (file) {
+            return file.name;
+          });
+          label.textContent = filenameList.join(', ') || defaultLabelText;
+          label.title = label.textContent;
+        });
       });
     </script>
     <div class="innerbox">
