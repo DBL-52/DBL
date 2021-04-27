@@ -65,6 +65,13 @@
    .file-upload-button:active{
      background:#00745D;
    }
+   .file-upload-label{
+    max-width: 250px;
+    font-size: 0.95em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+   }
      </style>
   </head>  
 
@@ -76,8 +83,24 @@
     <div class="file-upload">
       <input class="file-upload-input" type="file" name="myFile[]" id='myFile' multiple>
       <button class="file-upload-button" type="button">Choose File(s)</button>
-      <span class class="file-upload-label">No file(s) selected</span>
+      <span class class="file-upload-label">No file(s) selected No file(s) selected No file(s) selected No file(s) selected No file(s) selected</span>
     </div>
+
+    <script>
+      Array.prototype.forEach.call(document.querySelectorAll('.file-upload-button'), function (button) {
+        const hiddenInput = button.parentElement.querySelector('.file-upload-input');
+        const label = button.parentElement.querySelector('.file-upload-label');
+        const defaultLabelText = 'No file(s) selected';
+
+        //Set default text for label
+        label.textContent = defaultLabelText;
+        label.title = defaultLabelText;
+
+        button.addEventListener('click', function() {
+          hiddenInput.click();
+        });
+      });
+    </script>
     <div class="innerbox">
       <button type="submit">X</button>
       <button type="submit">Y</button>
