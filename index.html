@@ -1,10 +1,20 @@
 <!DOCTYPE>
 <html>
-<!-- hello -->
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <head>
   <style>
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  left: 29%;
+  -ms-transform: translateX(-20%, -20%);
+  transform: translateX(-20%, -20%);
+}
+
   .title{
     font-size: 250px;
     font-family: 'Bebas Neue', cursive;
@@ -37,8 +47,15 @@
     font-size: 100px;
     font-family: 'Abel', sans-serif;
   }
+ 
   .background{
-     background: url(images/Data-Visualization_Blog-scaled.jpeg);
+    background: url(images/c.jpg);
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
    }
    .file-upload{
      display: inline-flex;
@@ -48,6 +65,29 @@
    .file-upload-input{
      display: none;
    }
+
+   body {
+  background: rgb(204,204,204); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 35cm;
+  height: 40cm; 
+  background: url(images/Data-Visualization_Blog-scaled.jpeg);
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
    .file-upload-button{
      -webkit-appearance: none;
      background: #009879;
@@ -74,15 +114,16 @@
    }
      </style>
   </head>  
-
+<page size="A4">
 <h1 class="title"> ARANAE </h1>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <body class="background">
-  <div class="outerbox">
+  <div class="vertical-center" >
     <div class="file-upload">
       <input class="file-upload-input" type="file" name="myFile[]" id='myFile' multiple>
-      <button class="file-upload-button" type="button">Choose File(s)</button>
+      <button class="file-upload-button veritical-center" type="button">Choose File(s)</button>
+       
       <span class class="file-upload-label">No file(s) selected No file(s) selected No file(s) selected No file(s) selected No file(s) selected</span>
     </div>
 
@@ -108,20 +149,24 @@
           label.title = label.textContent;
         });
       });
+      
     </script>
+
+
     <div class="innerbox">
       <button type="submit">X</button>
       <button type="submit">Y</button>
-      <button type="submit">Z</button>
+      <button type="submit">Z</button> <br>
       Visualization One.
     </div>
+
     <div class="innerbox">
       <button type="submit">X</button>
       <button type="submit">Y</button>
-      <button type="submit">X</button>
+      <button type="submit">X</button><br>
       Visualization Two.
     </div>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-</div>
+</div></page>
 </body>
 </html>
