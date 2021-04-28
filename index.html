@@ -90,8 +90,8 @@ page[size="A4"] {
 }
    .file-upload-button{
      -webkit-appearance: none;
-     background: #009879;
-     border: 2px solid #00745D;
+     background: #800080;
+     border: 2px solid #4B0082;
      border-radius: 4px;
      outline: none;
      padding: 0.5em 0.8em;
@@ -103,7 +103,7 @@ page[size="A4"] {
      cursor: pointer;
    }
    .file-upload-button:active{
-     background:#00745D;
+     background:#800080;
    }
    .file-upload-label{
     max-width: 250px;
@@ -111,6 +111,19 @@ page[size="A4"] {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+   }
+   .inner-button{
+     background: #800080;
+     border: 2px solid #4B0082;
+     border-radius: 4px;
+     outline: none;
+     padding: 0.5em 0.8em;
+     margin-right: 15px;
+     color: #ffffff;
+     font-size: 1em;
+     font-family: sans-serif;
+     font-weight: bold;
+     cursor: pointer;
    }
      </style>
   </head>  
@@ -154,16 +167,16 @@ page[size="A4"] {
 
 
     <div class="innerbox">
-      <button type="submit">X</button>
-      <button type="submit">Y</button>
-      <button type="submit">Z</button> <br>
+      <button type="submit" class="inner-button">X</button>
+      <button type="submit" class="inner-button">Y</button>
+      <button type="submit" class="inner-button">Z</button> <br>
       Visualization One.
     </div>
 
     <div class="innerbox">
-      <button type="submit">X</button>
-      <button type="submit">Y</button>
-      <button type="submit">X</button><br>
+      <button type="submit" class="inner-button">X</button>
+      <button type="submit" class="inner-button">Y</button>
+      <button type="submit" class="inner-button">X</button><br>
       Visualization Two.
     </div>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
