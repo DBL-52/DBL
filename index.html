@@ -133,36 +133,16 @@ page[size="A4"] {
 
 <body class="background">
   <div class="vertical-center" >
-    <div class="file-upload">
-      <input class="file-upload-input" type="file" name="myFile[]" id='myFile' multiple>
-      <button class="file-upload-button veritical-center" type="button">Choose File(s)</button>
-       
-      <span class class="file-upload-label">No file(s) selected No file(s) selected No file(s) selected No file(s) selected No file(s) selected</span>
-    </div>
+    
+    <input type="file" class="file-upload" hidden="hidden" />
+    <button class="file-upload-button"><p>Upload data</p></button>
 
-    <script>
-      Array.prototype.forEach.call(document.querySelectorAll('.file-upload-button'), function (button) {
-        const hiddenInput = button.parentElement.querySelector('.file-upload-input');
-        const label = button.parentElement.querySelector('.file-upload-label');
-        const defaultLabelText = 'No file(s) selected';
-
-        //Set default text for label
-        label.textContent = defaultLabelText;
-        label.title = defaultLabelText;
-
-        button.addEventListener('click', function() {
-          hiddenInput.click();
+    <script type="text/javascript">
+        const realFileBtn = document.getElementById("real-file");
+        const mybutton = document.getElementById("data");
+        mybutton.addEventListener("click", function(){
+            realFileBtn.click();
         });
-
-        hiddenInput.addEventListener('change', function() {
-          const filenameList = Array.prototype.map.call(hiddenInput.files, function (file) {
-            return file.name;
-          });
-          label.textContent = filenameList.join(', ') || defaultLabelText;
-          label.title = label.textContent;
-        });
-      });
-      
     </script>
 
 
