@@ -134,12 +134,12 @@ page[size="A4"] {
 <body class="background">
   <div class="vertical-center" >
     
-    <input type="file" class="file-upload" hidden="hidden" />
+    <input type="file" class="file-upload-input" hidden="hidden" />
     <button class="file-upload-button"><p>Upload data</p></button>
 
     <script type="text/javascript">
-        const realFileBtn = document.getElementById("real-file");
-        const mybutton = document.getElementById("data");
+        const realFileBtn = document.getElementByClass("file-upload-input");
+        const mybutton = document.getElementByClass("file-upload-button");
         mybutton.addEventListener("click", function(){
             realFileBtn.click();
         });
