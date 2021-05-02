@@ -2,134 +2,169 @@
 <html>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-
-<head>
-  <style>
-
-
-.vertical-center {
-  margin: 0;
-  position: relative;
-  left: 15%;
-  -ms-transform: translateY(-30%, -30%);
-  transform: translateY(-30%, -30%);
-}
-
+<style>
+  .vertical-center {
+    margin: 0;
+    position: relative;
+    left: 15%;
+    -ms-transform: translateY(-30%, -30%);
+    transform: translateY(-30%, -30%);
+  }
   .title{
     font-size: 300px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: #D4AFB9;
+     font-family: 'Raleway', sans-serif;
+     text-align: center;
+     color: #D4AFB9;
+   }
+   .outerbox{
+     display: flex;
+     justify-content: space-around;
+     align-items: stretch;
+     border: 3px solid white;
+     border-radius: 5px;
+     background-color: rgb(255,255,255,0.5);
+     color: grey;
+     width: 1600px;
+     margin: 50px;
+     padding: 50px;
+     font-size: 50px;
+     min-height: 800px;
+   }
+   .innerbox{
+     border: 3px solid #52B2CF;
+     border-radius: 5px;
+     background-color: #7EC4CF;
+     color: white;
+     width: 800px;
+     margin: 10px;
+     padding: 50px;
+     min-height: 200px;
+     font-size: 100px;
+     font-family: 'Abel', sans-serif;
+   }   
+    .background{
+      background: url(images/c.jpg);
+      height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+     }
+     #file-upload{
+       display: inline-flex;
+       align-items: center;
+       font-size: 15px;
+     }
+     #file-upload-input{
+       display: none;
+     }
+  
+     body {
+    background: rgb(204,204,204); 
   }
-  .outerbox{
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    border: 3px solid white;
-    border-radius: 5px;
-    background-color: rgb(255,255,255,0.5);
-    color: grey;
-    width: 1600px;
-    margin: 50px;
-    padding: 50px;
-    font-size: 50px;
-    min-height: 800px;
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   }
-  .innerbox{
-    border: 3px solid #52B2CF;
-    border-radius: 5px;
-    background-color: #7EC4CF;
-    color: white;
-    width: 800px;
-    margin: 10px;
-    padding: 50px;
-    min-height: 200px;
-    font-size: 100px;
-    font-family: 'Abel', sans-serif;
+  page[size="A4"] {  
+    width: 35cm;
+    height: 40cm; 
+    background: url(images/Data-Visualization_Blog-scaled.jpeg);
   }
- 
-  .background{
-    background: url(images/c.jpg);
-    height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-   }
-   #file-upload{
-     display: inline-flex;
-     align-items: center;
-     font-size: 15px;
-   }
-   #file-upload-input{
-     display: none;
-   }
-
-   body {
-  background: rgb(204,204,204); 
-}
-page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
-}
-page[size="A4"] {  
-  width: 35cm;
-  height: 40cm; 
-  background: url(images/Data-Visualization_Blog-scaled.jpeg);
-}
-
-@media print {
-  body, page {
-    margin: 0;
-    box-shadow: 0;
+  
+  @media print {
+    body, page {
+      margin: 0;
+      box-shadow: 0;
+    }
   }
-}
-   #file-upload-button{
-     -webkit-appearance: none;
-     background: #9CADCE;
-     border: 2px solid #D1CFE2;
-     border-radius: 4px;
-     outline: none;
-     padding: 0.5em 0.8em;
-     margin-right: 15px;
-     color: #ffffff;
-     font-size: 1em;
-     font-family: sans-serif;
-     font-weight: bold;
-     cursor: pointer;
-   }
-   #file-upload-button:active{
-     background:#D1CFE2;
-   }
-   #custom-text {
-     margin-left: 10px;
-     font-family: sans-serif;
-     color: #white;
-   }
-   .inner-button{
-     background: #9CADCE;
-     border: 2px solid #D1CFE2;
-     border-radius: 4px;
-     outline: none;
-     padding: 0.5em 0.8em;
-     margin-right: 15px;
-     color: #ffffff;
-     font-size: 1em;
-     font-family: sans-serif;
-     font-weight: bold;
-     cursor: pointer;
-   }
-     </style>
+     #file-upload-button{
+       -webkit-appearance: none;
+       background: #9CADCE;
+       border: 2px solid #D1CFE2;
+       border-radius: 4px;
+       outline: none;
+       padding: 0.5em 0.8em;
+       margin-right: 15px;
+       color: #ffffff;
+       font-size: 1em;
+       font-family: sans-serif;
+       font-weight: bold;
+       cursor: pointer;
+     }
+     #file-upload-button:active{
+       background:#D1CFE2;
+     }
+     #custom-text {
+       margin-left: 10px;
+       font-family: sans-serif;
+       color: white;
+     }
+     .inner-button {
+       background: #9CADCE;
+       border: 2px solid #D1CFE2;
+       border-radius: 4px;
+       outline: none;
+       padding: 0.5em 0.8em;
+       margin-right: 15px;
+       color: #ffffff;
+       font-size: 1em;
+       font-family: sans-serif;
+       font-weight: bold;
+       cursor: pointer;
+     }
+     .wrapper {
+       width: 1170px;
+       margin: 0 auto;
+     }
+     header {
+       height: 100px;
+       background: #D4AFB9;
+       width: 100%;
+       z-index: 12;
+       position: fixed;
+     }
+    .logo {
+      width: 30%;
+      float: left;
+      line-height: 100px;
+    }
+    .logo a {
+      text-decoration: none;
+      font-size: 30px;
+      font-family: ; 
+      color: white;
+      letter-spacing: 5px;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Data visualization site group 52</title>
   </head>  
 <page size="A4">
 <h1 class="title"> ARANAE </h1>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
 
 <body class="background">
+  <div class="box-area">
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">ARANAE</a>
+        </div>
+        <nav>
+          <a href="#">About</a>
+        </nav>
+      </div>
+    </header>
+    <div class="banner-area">
+      <h2>ARENAE</h2>
+    </div>
+  </div>
   <div class="vertical-center" >
     
     <input type="file" id="file-upload-input" hidden="hidden" />
