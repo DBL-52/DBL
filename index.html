@@ -16,8 +16,8 @@
 }
 
   .title{
-    font-size: 250px;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 400px;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     color: #00003f;
   }
@@ -105,12 +105,10 @@ page[size="A4"] {
    #file-upload-button:active{
      background:#4B0082;
    }
-   .file-upload-label{
-    max-width: 250px;
-    font-size: 0.95em;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+   #custom-text {
+     margin-left: 10px;
+     font-family: sans-serif;
+     color: #aaa;
    }
    .inner-button{
      background: #800080;
@@ -129,19 +127,28 @@ page[size="A4"] {
   </head>  
 <page size="A4">
 <h1 class="title"> ARANAE </h1>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
 
 <body class="background">
   <div class="vertical-center" >
     
     <input type="file" id="file-upload-input" hidden="hidden" />
     <button id="file-upload-button"><p>Upload data</p></button>
+    <span id="custom-text">No file chosen, yet.</span>
 
     <script type="text/javascript">
         const realFileBtn = document.getElementById("file-upload-input");
         const mybutton = document.getElementById("file-upload-button");
+        const customTxt = document.getElementById("custom-text")
         mybutton.addEventListener("click", function(){
             realFileBtn.click();
+        });
+        realFileBtn.addEventListener("change", function(){
+          if (realFileBtn.value) {
+            customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+          } else {
+            customTxt.innerHTML = "No file chosen, yet.";
+          }
         });
     </script>
 
