@@ -129,10 +129,44 @@
     }
     .logo a {
       text-decoration: none;
-      font-size: 30px;
-      font-family: 'Raleway', sans-serif;; 
+      font-size: 50px;
+      font-family: 'Raleway', sans-serif;
       color: white;
       letter-spacing: 5px;
+    }
+    nav {
+      float: right;
+      line-height: 100px;
+    }
+    nav a {
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 4px;
+      font-size: 30px;
+      color: white;
+    }
+    .banner-area {
+      width: 100px;
+      height: 500px;
+      position: fixed;
+      top: 100px;
+      background: white;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+    }
+    .banner-area h2 {
+      padding-top: 8%;
+      font-size: 100px;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      color:  #D4AFB9;
+    }
+    .content-area{
+      width: 100%;
+      position: relative;
+      top: 450px;
+      height: 1500px;
     }
   </style>
   <head>
@@ -157,7 +191,7 @@
     </div>
   </div>
 
-<body class="background">
+<body class="background content-area">
   <div class="vertical-center" >
     
     <input type="file" id="file-upload-input" hidden="hidden" />
