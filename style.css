@@ -1,0 +1,98 @@
+.vertical-center {
+   margin: 0;
+   position: relative;
+   left: 15%;
+   -ms-transform: translateY(-30%, -30%);
+   transform: translateY(-30%, -30%);
+ }
+.title{
+   font-size: 250px;
+   font-family: 'Bebas Neue', cursive;
+   text-align: center;
+   color: #00003f;
+ }
+.innerbox{
+   border: 3px solid #52B2CF;
+   border-radius: 5px;
+   background-color: #7EC4CF;
+   color: white;
+   width: 800px;
+   margin: 10px;
+   padding: 50px;
+   min-height: 200px;
+   font-size: 100px;
+   font-family: 'Abel', sans-serif;
+ }   
+.background{
+   background: url(images/c.jpg);
+   height: 100%;
+  
+/* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: repeat;
+   background-size: cover;
+ }
+#file-upload{
+   display: inline-flex;
+   align-items: center;
+   font-size: 15px;
+ }
+#file-upload-input{
+   display: none;
+ }
+body {
+   background: rgb(204,204,204); 
+ }
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+ }
+page[size="A4"] {  
+  width: 35cm;
+  height: 40cm; 
+  background: url(images/Data-Visualization_Blog-scaled.jpeg);
+ }  
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+ }
+#file-upload-button{
+  -webkit-appearance: none;
+  background: #9CADCE;
+  border: 2px solid #D1CFE2;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+ }
+#file-upload-button:active{
+  background:#D1CFE2;
+ }
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: white;
+ }
+.inner-button {
+  background: #9CADCE;
+  border: 2px solid #D1CFE2;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+ }
