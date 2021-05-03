@@ -7,9 +7,10 @@
  }
 .title{
    font-size: 250px;
-   font-family: 'Bebas Neue', cursive;
+   font-family: 'Karla', sans-serif;
    text-align: center;
-   color: #00003f;
+   color: white;
+   text-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
  }
 .innerbox{
    border: 3px solid #52B2CF;
