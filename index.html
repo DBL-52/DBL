@@ -4,6 +4,27 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
+<header>
+  <div class="logo">Aranae</div>
+<div class="popup cta" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+    <h1>Group 52</h1>
+    <p>
+      Kyrie-Alysa, Dragos, Andrei, Sinem, Tim and Ilse.
+    </p>
+  </div>
+</div>
+<button onclick="togglePopup()">About</button>
+<script type="text/javascript">
+  function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+</script>
+</header>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 <page size="A4">
 <!--Title of page-->
   <h1 class="title"> ARANAE </h1>
@@ -33,16 +54,10 @@
     </script>
 <!--Boxes in which the visualizations are positioned-->
     <div class="innerbox">
-      <button type="submit" class="inner-button">X</button>
-      <button type="submit" class="inner-button">Y</button>
-      <button type="submit" class="inner-button">Z</button> <br>
       Visualization One.
     </div>
 
     <div class="innerbox">
-      <button type="submit" class="inner-button">X</button>
-      <button type="submit" class="inner-button">Y</button>
-      <button type="submit" class="inner-button">X</button><br>
       Visualization Two.
     </div>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
