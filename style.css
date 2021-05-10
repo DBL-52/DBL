@@ -27,6 +27,7 @@
 .background{
    background: url(images/c.jpg);
    height: 100%;
+   width: 100%;
   
 /* Center and scale the image nicely */
    background-position: center;
@@ -106,6 +107,7 @@ header {
   background-color: #253041;
   box-sizing: border-box;
   min-width:100%; 
+  box-shadow: 0 0 3px #000;
 }
 
 button {
@@ -189,4 +191,9 @@ button:hover {
   color: white;
   text-decoration: none;
 
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
