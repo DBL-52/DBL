@@ -101,10 +101,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: auto;
   padding: 30px 10%;
   background-color: #253041;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  min-width:100%; 
 }
 
 button {
@@ -115,6 +116,8 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 button:hover {
