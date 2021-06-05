@@ -24,17 +24,32 @@
         <div class="close-btn" onclick="togglePopup()">&times;</div>
         <h1>Group 52</h1>
         <p>
-          {{content}}
           Kyrie-Alysa, Dragos, Andrei, Sinem, Tim and Ilse.
         </p>
       </div>
     </div>
+    <div class="popup cta" id="popup-2">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopupVid()">&times;</div>
+        <h1>Video</h1>
+        <iframe width="400px" height="250px" src="https://www.youtube.com/embed/gAqRFQVP0jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
     <button class="button" onclick="togglePopup()">About</button>
+    <button class="button" onclick="togglePopupVid()">Video</button>
     <script type="text/javascript">
       function togglePopup() {
         document.getElementById("popup-1").classList.toggle("active");
       }
     </script>
+     <script type="text/javascript">
+      function togglePopupVid() {
+        document.getElementById("popup-2").classList.toggle("active");
+      }
+    </script>
+
     </header>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <!--Title of page-->
