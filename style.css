@@ -175,8 +175,8 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #253041;
-  width: 450px;
-  height: 220px;
+  width: 40vw;
+  height: 50vh;
   z-index: 2;
   text-align: center;
   padding: 20px;
