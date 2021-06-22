@@ -4,16 +4,16 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   -ms-transform: translateY(-30%, -30%);
-   transform: translateY(-30%, -30%);
+   -ms-transform: translateY(-15%, -15%);
+   transform: translateY(-15%, -15%);
  }
 
 .vertical-center {
   margin: 0;
   position: relative;
-  left: 15%;
-  -ms-transform: translateY(-30%, -30%);
-  transform: translateY(-30%, -30%);
+  left: 2%;
+  -ms-transform: translateY(-15%, -15%);
+  transform: translateY(-15%, -15%);
 }
 
 .title{
@@ -41,19 +41,37 @@
    align-items: center;
  }  
 
- .innerbox2{
+ .innerbox2 {
   border: 2px solid rgb(37, 48, 65);
   border-radius: 5px;
   background-color: rgb(81, 112, 151, 0.7);
   color: white;
-  width: 60%;
+  width: 40%;
   margin: 10px;
-  padding: 50px;
+  padding: 30px;
   min-height: 30%;
   font-size: 100px;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   position: relative;
-}   
+  float: left;
+  display: block;
+} 
+
+.innerbox21 {
+  border: 2px solid rgb(37, 48, 65);
+  border-radius: 20px;
+  background-color: rgb(81, 112, 151, 0.7);
+  color: white;
+  width: 90%;
+  margin: 10px;
+  padding: 30px;
+  min-height: 30%;
+  font-size: 100px;
+  font-family: "Abel", sans-serif;
+  float: left;
+  display: block;
+  position: relative;
+}
 
  .responsive {
   width: 100%;
